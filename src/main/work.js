@@ -5,7 +5,7 @@ function Diary(){
 	const[firstName, setFirstName] = useState('');
 	const[telNum, setTelNum] = useState('');
 	const[email, setEmail] = useState('');
-	const[error, setError] = useState('');
+	
 	const[lists, setLists] = useState([]);
 	const remove = (id) => {
     let newList = lists.filter((list) => list.id !== id);
@@ -24,7 +24,7 @@ function Diary(){
 			setTelNum('')
 			console.log(list);
 		}else{
-			setError('Fill out the form');
+			
 		}
 	});
 
