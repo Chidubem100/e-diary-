@@ -30,6 +30,10 @@ function Diary(){
 
 	return(
 		<>
+
+			<div className='nav'>
+				<span>E-Diary</span>
+			</div>
 			<form className='form'>
 		          <div className='f-control'>
 		            <label htmlFor='firstName'>Name :</label>
@@ -90,7 +94,7 @@ function Diary(){
             		)
             	})
             }
-            <button className='btn btnr' onClick={() => setLists([])}>Clear all</button>
+            
 		</>
 	)
 }
