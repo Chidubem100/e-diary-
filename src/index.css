@@ -1,0 +1,136 @@
+:root{
+	--bgcolor: #dde1e7;
+	--bg:  linear-gradient(to right top, #d18ba5,#c777b9, #ba83ca,#aa8fd8,#9a9ae1,#8aa7ec,#79b3f4,#69bff8,#52cffe,#41dfff,#46eefa,#5ffbf1);
+	--gradient: linear-gradient(to right, #643b4b, #121c2b);
+}
+
+.btn{
+	background-image: var(--gradient);
+	color: whitesmoke;
+	padding: 10px;
+	text-transform: capitalize;
+	font-weight: 700;
+	margin-top: 10px;
+	font-size: 20px;
+	border-radius: 8px;
+}
+
+.f-control{
+	height: 3rem;
+	margin-bottom: 2rem;
+	font-size: 20px;
+}
+label{
+	display: flex;
+	flex-direction: column;
+}
+input{
+	padding: 4px 7px;
+	border-style: none;
+	height: 2rem;
+	width: 20rem;
+	border-radius: 7px;
+	/* text-transform: capitalize; */
+}
+
+.form{
+	display: grid;
+	background-image: var(--bg);
+	place-content: center;
+	height: 50vh;
+	/* margin-bottom: 3rem; */
+}
+@media screen and (min-device-width: 345px) and (max-device-width: 860px){
+	label{
+		font-size: 18px;
+		padding: 3px;
+	}
+	input{
+		height: 1.9rem;
+		width: 20rem;
+	}
+	.form{
+		width: 23.5rem;
+	}
+	.btn{
+		padding: 3px;
+		border-radius: 10px;
+	}
+}
+.btnr{
+	display: grid;
+	place-content: center;
+	margin-left: 40rem;
+}
+
+.container{
+	/* height: 100vh; */
+	display: grid;
+	place-content: center;
+	padding: 30px;
+	position: relative;
+	background: var(--bgcolor);
+}
+.list{
+	height: 150px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+	background: var(--bgcolor);
+	border-radius: 8px;
+	box-shadow: inset -3px -3px 7px #ffffffb0,
+	inset 3px 3px 5px rgba(94,104,121,0.692);
+}
+.list >h3{
+	text-transform: capitalize;
+	font-size: 24px;
+	color: black;
+	font-weight: bold;
+	box-sizing: content-box;
+	padding-bottom: 5px;
+}
+.list >span{
+	font-size: 14px;
+	color: black;
+	padding-bottom: 5px;
+}
+.list >a{
+	text-decoration: none;
+	font-size: 22px;
+	color: #121c2b;
+	padding-bottom: 6px;
+}
+a :hover{
+	color: blue;
+}
+
+@media screen and (min-device-width: 345px) and (max-device-width: 736px){
+	.list{
+		width: 250px;
+		padding: 2rem;
+		margin-left: -2rem ;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
